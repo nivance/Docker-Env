@@ -1,0 +1,22 @@
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+        . ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/bin
+
+export PATH
+
+JAVA_HOME=/opt/soft/jrockit-jdk1.6.0_37-R28.2.5-4.1.0/
+JRE_HOME=/opt/soft/jrockit-jdk1.6.0_37-R28.2.5-4.1.0/jre/
+MAVEN_HOME=/opt/soft/apache-maven-3.2.1/
+
+#JAVA_OPTS=' -Xmx4096m -Xms2048m -XX:PermSize=512m -XX:MaxPermSize=1024m -Djava.awt.headless=true -Djava.io.tmpdir=/var/tmp -Xmanagement:ssl=false,authenticate=false,autodiscovery=true -Djava.rmi.server.hostname=192.168.130.3'
+JAVA_OPTS=' -Xmx2048m -Xms2048m -XX:PermSize=512m -XX:MaxPermSize=1024m -Djava.awt.headless=true -Djava.io.tmpdir=/var/tmp -Xmanagement:ssl=false,authenticate=false,autodiscovery=true'
+PATH=$ANT_HOME/bin:$MAVEN_HOME/bin:$HOME/bin:$JAVA_HOME/bin:$JRE_HOME/bin:$PATH
+LANG=zh_CN
+export PATH JAVA_HOME JRE_HOME JBOSS_HOME ANT_HOME MAVEN_HOME JAVA_OPTS LANG

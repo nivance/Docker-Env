@@ -1,0 +1,19 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
+
+# User specific aliases and functions
+declare -x LC_ALL="zh_CN.UTF-8"
+declare -x LC_CTYPE="zh_CN.UTF-8"
+declare -x LANG="zh_CN.UTF-8"
+
+
+alias bver="pwd|awk -F- '{print \$2}'"
+alias mvn='mvn -Dbuild.version=`bver`'
+alias acdlog='cd /usr/local/glassfish3/glassfish/domains/domain1/logs/'
+alias deadfish_dump='sh ~/dump.sh;~/glassfish3/glassfish/bin/asadmin stop-domain domain1'
+alias deadfish='/usr/local/glassfish3/glassfish/bin/asadmin stop-domain domain1'
+alias startfish='/usr/local/glassfish3/glassfish/bin/asadmin start-domain domain1'
