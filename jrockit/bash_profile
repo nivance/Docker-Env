@@ -1,0 +1,12 @@
+if [ -f ~/.bashrc ]; then
+        . ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/bin
+export PATH
+
+export JAVA_HOME=/opt/soft/jrockit-jdk1.6.0_37-R28.2.5-4.1.0/
+export JRE_HOME=/opt/soft/jrockit-jdk1.6.0_37-R28.2.5-4.1.0/jre
+export PATH=$JAVA_HOME/bin:$JRE_HOME/bin:$PATH
