@@ -1,5 +1,5 @@
 FROM ubuntu:precise
-MAINTAINER limingjian <limingjian@joyveb.com>
+MAINTAINER limingjian <limingjian110@163.com>
 
 RUN apt-get update && apt-get install -y openssh-server
 RUN mkdir /var/run/sshd
