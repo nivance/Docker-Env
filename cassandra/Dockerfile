@@ -10,6 +10,7 @@ RUN cd /opt/soft/ ; \
 	rpm -ivh /opt/soft/jdk*.rpm && rm -rf  /opt/soft/jdk*.rpm
 ######################
 RUN cd /usr/local ; \
+	yum install -u wget ; \
 	wget http://mirrors.hust.edu.cn/apache/cassandra/${CASSVERS}/apache-cassandra-${CASSVERS}-bin.tar.gz ; \
 	tar -xzvf apache-cassandra-${CASSVERS}-bin.tar.gz
 ##################
