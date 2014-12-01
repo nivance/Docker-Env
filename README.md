@@ -9,3 +9,5 @@ Docker
 4.[Mongodb2.6.3](https://github.com/nivance/Docker-Env/tree/master/mongdb/2.6.3)
 
 5.[ubuntu-ssh](https://github.com/nivance/Docker-Env/tree/master/ubuntu-ssh)
+
+6.[cassandra](https://github.com/nivance/Docker-Env/tree/master/cassandra)
