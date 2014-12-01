@@ -1,5 +1,5 @@
 INSTRUCTION cassandra
-FROM 172.16.7.83:5000/library/joyos
+FROM centos
 MAINTAINER nivance
 ENV CASSVERS 2.1.2
 ############
