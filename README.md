@@ -12,4 +12,4 @@ Docker
 
 6.[cassandra](https://github.com/nivance/Docker-Env/tree/master/cassandra)
 
-7.[cassandra](https://github.com/nivance/Docker-Env/tree/master/centos6.5)
+7.[centos6.5](https://github.com/nivance/Docker-Env/tree/master/centos6.5)
