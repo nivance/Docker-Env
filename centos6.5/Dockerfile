@@ -1,6 +1,4 @@
-
-
-INSTRUCTION joyos 
+INSTRUCTION centos6.5 with ssh
 FROM insaneworks/centos
 MAINTAINER  nivance
 ###################
@@ -25,8 +23,7 @@ RUN ssh-keygen -t dsa -f /etc/ssh/ssh_host_dsa_key -P "" -q \
     && sed -ri 's/UsePAM yes/#UsePAM yes/g' /etc/ssh/sshd_config \
     && sed -ri 's/#UsePAM no/UsePAM no/g' /etc/ssh/sshd_config \
     && echo 'root:000000'|chpasswd
-ADD bashrc	/root/.bashrc
-ADD supervisord.conf /etc/supervisord.conf
+
 EXPOSE 22
 CMD ["/usr/bin/supervisord"]
 
