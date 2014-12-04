@@ -1,0 +1,22 @@
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/bin
+JAVA_HOME=/usr/java/jdk1.7.0_71
+JRE_HOME=${JAVA_HOME}/jre
+PATH=$PATH:$HOME/bin:${JAVA_HOME}/bin:${JRE_HOME}/bin
+CLASSPATH=.:${JAVA_HOME}/lib/tools.jar:${JRE_HOME}/lib:${JAVA_HOME}/lib/rt.jar
+export PATH
+
+export PATH
+alias vi=vim
+
+declare -x LC_ALL="zh_CN.UTF-8"
+declare -x LC_CTYPE="zh_CN.UTF-8"
+declare -x LANG="zh_CN.UTF-8"
